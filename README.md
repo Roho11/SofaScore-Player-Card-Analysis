@@ -18,4 +18,4 @@ To ensure that my model is as up-to-date as possible, I've scheduled it to run o
 
 Feel free to explore the scripts, adapt the model to your preferences, or provide feedback. While my model has served my personal interests, remember that betting entails risks, and responsible gambling is essential.
 
-Developed by [Your Name]
+Developed by Roho11
