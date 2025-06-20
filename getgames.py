@@ -36,11 +36,11 @@ def get_todays_games():
     today          = date.today()
     today_formated = today.strftime("%Y-%m-%d")
     today_slo_form = today.strftime("%d.%m.%Y")
-    with open('/Users/Roho11/Desktop/pyscripts/check_game_date.txt', 'r') as file:
+    with open(os.path.join(os.path.dirname(__file__),'check_game_date.txt'), 'r') as file:
         last_read_date = file.readline()
         file.close()
     if last_read_date < today_formated:
-        with open('/Users/Roho11/Desktop/pyscripts/check_game_date.txt', 'w') as file:
+        with open(os.path.join(os.path.dirname(__file__),'check_game_date.txt'), 'w') as file:
             file.write(today_formated)
             file.close()
         url            = f'https://api.sofascore.com/api/v1/sport/football/scheduled-events/{today}'

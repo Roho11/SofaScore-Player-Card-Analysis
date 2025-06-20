@@ -14,8 +14,8 @@ def div0(x,y):
 today          = datetime.today()
 today_formated = today.strftime("%Y-%m-%d")
 
-postave_path   = f'/Users/Roho11/Desktop/pyscripts/GamesInPlay/{today_formated}'
-analize_path   = f'/Users/Roho11/Desktop/pyscripts/CardAnalysis/{today_formated}'
+postave_path   = os.path.join(os.path.dirname(__file__),f'{today_formated}')
+analize_path   = os.path.join(os.path.dirname(__file__),f'{today_formated}')
 
 seznam_postav  = os.listdir(postave_path)
 #print(seznam_postav)
